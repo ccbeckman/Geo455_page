@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>geo455_lab3</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <style type="text/css">
+#container {
+	height: relative;
+	width: relative;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+#container #map {
+	background-color: #FFFF66;
+	height: 850px;
+    }
+#container #header {
+    font-size: 2em;
+    font-family: "Lora", serif;
+    letter-spacing: .04em;
+    padding: 10px 15px;
+    background-color: rgba(99, 200, 228, 0.5);
+    border: 1px solid grey;
+    border-radius: 3px;
+    text-align: center;
+    }
+#container #leftMenu {
+	position: static;
+    background-color: #EEEEEE;
+	width: 300px;
+    top: 100px;
+    left: 50px;
+	float: left;
+	height: 830px;
+	margin: 0px;
+    font-size: 1em;
+    font-family: "Lora", serif;
+    letter-spacing: .04em;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid grey;
+    border-radius: 3px;
+    z-index: 800;
+}
+#container #footer {
+    clear: both;
+	font-family: "Lora", serif;
+	font-size: 1em;
+    letter-spacing: .04em;
+	height: 25px;
+	background-color: rgba(99, 200, 228, 0.5);
+    border: 1px solid grey;
+	text-align: center;
+	padding-top: 3px;
+	font-style: italic;
+}
+body {
+	background-color: #DDECCC;
+}
+</style>
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">Lab 3: Summer Trip 2019</div>
+            <div id="leftMenu">
+                <p>Hawaii is a destination that i've always wanted to vist and plan to in the near future. Here are a couple of places that have been recommended to me by other people that have traveled to this desinaion!</p>
+                <hr>
+                    <ol type="1">
+                       <li>Southern Most point of the US</li>
+                        <li>Southern Point Cliff Dive</li>
+                        <li>Aloha Horseback Adventures</li>
+                        <li>Hawaii Volcano National Park Kahuku Unit</li>
+                        <li>Kula Kai Caverns</li>
+                        <li>Imiloa Astronomy Center</li>
+                        <li>Boiling Pots</li>
+                        <li>Lili’uokalani Gardens </li>
+                        <li>Keaukaha Beach Park</li>
+                        <li>The Umauma Falls Experience</li>
+                    </ol>
+                <hr>
+                <p><img style="width: relative; height: 150px;" src="hawaii.jpg" alt="View of Hawaii Mountains"></p>
+                <p><i><sup>Photo Credits: Childrens Health Living (CHL) Center</sup></i></p>
+                </div>
+            <div id="map"></div>
+                <script src="lab_3.js"></script>
+            <div id="footer">Map developed by Chloe Beckman</div>
+        </div>
+     </body>
+</html>
