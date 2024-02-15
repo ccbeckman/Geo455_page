@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Event object</title>
+     <head>
+        <title>Earth poles</title>
     </head>
     <body>
+        <h2>Earth Poles Viewer</h2>
+        <img id="myImage" src="images/north.svg"><br>
+        <hr>
+        <input type="button" value="Show me the opposite of South" id="north"> <!-- event listener -->
+        <input type="button" value="Show me the opposite of North" id="south"> <!-- event listener -->
+        <script>
+            function showNorth() {              //event listeners function
+                document
+                    .getElementById("myImage")
+                    .src = "images/north.svg";
+            }
+            function showSouth() {              //event listeners function
+                document
+                    .getElementById("myImage")
+                    .src = "images/south.svg";
+            }
+            document
+                .getElementById("north")
+                .addEventListener("click", showNorth);  //fetching the function
+            document
+                .getElementById("south")
+                .addEventListener("click", showSouth);  //fetching the function
+        </script>
+    </body>
+    
+        <head>
+        <title>Earth With Points</title>
+    </head>
+    <body>
+        <p> These are coordinates of the page! Find (266, 200)</p>
         <p id="position"></p>
         <script>
             var page_coord = document.getElementById("position");
