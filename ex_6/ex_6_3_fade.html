@@ -2,9 +2,11 @@
    <head>
       <title>Ex- 6-2: CSS manipulation</title>
        <style>
+           .charac {
+               float: left;
+           }
            img {
-               position: relative;
-               width: 200px; 
+              width: 200px; 
                height: 200px; 
            }
       </style>
@@ -22,33 +24,28 @@
           }); */
           
           $(document).ready(function() {
-              $("#button").click(function(){
-                  $("img").animate({left: '750px'});
-            });
+              $("button").click(function(){
+                  $("#normal").fadeToggle();
+                  $("#fast").fadeToggle("fast");
+                  $("#slow").fadeToggle("slow");
+                  $("#very-slow").fadeToggle(2000);
+              });
           });
-          $(document).ready(function() {
-              $("#button1").click(function(){
-                  $("img").animate({right: '550px'});
-            });
-          });
-            
           
 
       </script>
 
 	
    <body>
-       <button id="button">Go</button>
-       <button id="button1">Back</button>
        <h1> Adventures of Tintin </h1>
        <p> Main Characters </p>
-       <div>
-           <img src="img/tintin-milou.jpg"> <br>
-           <img src="img/captain-haddock_v2.jpg"> <br>
-           <img src="img/prof_calcu.jpg"> <br>
-           <img src="img/Thomson_&_Thompson.png"> <br>
+       <div class= "charac">
+           <img id="normal" src="img/tintin-milou.jpg"> <br>
+           <img id="fast" src="img/captain-haddock_v2.jpg"> <br>
+           <img id="slow" src="img/prof_calcu.jpg"> <br>
+           <img id="very-slow" src="img/Thomson_&_Thompson.png"> <br>
        </div>
        
-
+       <button>Fade Toggle</button>
    </body>
 </html>

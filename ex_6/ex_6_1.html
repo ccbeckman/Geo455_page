@@ -7,19 +7,40 @@
 
       <script type = "text/javascript" language = "javascript">
          $(document).ready(function() {
-            $("p:first").css('background-color', 'yellow');
+            $("p:first").css('background-color', 'green');
          });
-     
+        $(document).ready(function() {//open console and copy-paste the the code below//
+                $("ul").text();
+            });      
+          
         $(document).ready(function() {
             $("button").click(function(){
-                $("ul").css('color', 'red');
+                $("ul").css('color', 'lightgreen');
             });
          });
+          
+          $(document).ready(function() {
+            $("button").click(function(){
+                $("p").css('color', 'lightblue');
+            });
+         });
+        
+     $(document).ready(function() {
+         $("button1").click(function() {
+            $("p1").css('color', 'darkblue')
+                });
+         }); 
+             
+         var design = {
+              color: "White",
+              background: "grey",
+              border: "3px solid black"
+          }
       </script>
    </head>
 	
    <body>
-       <h1> Webmapping </h1>
+       <h1> WEBMAPPING </h1>
        <p> Technologies we learned </p>
        <ul>
            <li> HTML </li>
@@ -27,8 +48,10 @@
            <li> JavaScript </li>
            <li> jQuery </li>
        </ul>
-       
-       <p id="test">Check console to get the text for list</p> 
+
+
+       <p id="test">Check console to get the text for list</p>
+       <p1>This is an extra paragraph</p1>
        <button>Change list text color</button>
     </body>
 </html>
